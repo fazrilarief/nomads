@@ -310,33 +310,39 @@ header {
       font-size: 20px;
       font-weight: 600;
     }
+  }
 
-    .features {
-      margin-top: 20px;
+  .card-right {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+  }
 
-      h3 {
-        font-size: 18px;
-        color: #071c4d;
-        margin-bottom: 0;
-      }
+  .features {
+    margin-top: 20px;
 
-      p {
-        font-size: 14px;
-        color: #b1b1b1;
-        margin-bottom: 0;
-      }
+    h3 {
+      font-size: 18px;
+      color: #071c4d;
+      margin-bottom: 0;
+    }
 
-      .features-image {
-        height: 45px;
-        width: 45px;
-        float: left;
-      }
+    p {
+      font-size: 14px;
+      color: #b1b1b1;
+      margin-bottom: 0;
+    }
 
-      .description {
-        margin-left: 10px;
-        overflow: hidden;
-        float: left;
-      }
+    .features-image {
+      height: 45px;
+      width: 45px;
+      float: left;
+    }
+
+    .description {
+      margin-left: 10px;
+      overflow: hidden;
+      float: left;
     }
   }
 
@@ -356,5 +362,30 @@ header {
         box-shadow: none;
       }
     }
+  }
+}
+
+.member {
+  .member-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.join-container {
+  margin-top: -16px;
+}
+
+.btn-join-now {
+  background-color: #ff9e53;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #ffa968;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0;
   }
 }
