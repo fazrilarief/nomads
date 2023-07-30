@@ -494,3 +494,32 @@ header {
     border-radius: 0;
   }
 }
+
+.section-success {
+  height: 90vh;
+  margin-top: 100px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #071c4d;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #b1b1b1;
+  }
+
+  .btn-home-page {
+    border-radius: 4px;
+    background-color: #071c4d;
+    color: #fff;
+
+    &:hover {
+      border-radius: 4px;
+      background-color: #0a2462;
+      color: #fff;
+    }
+  }
+}
