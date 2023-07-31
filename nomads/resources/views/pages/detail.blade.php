@@ -28,29 +28,29 @@
                             <p>Republic of Indonesia Raya</p>
                             <div class="gallery">
                                 <div class="xzoom-container">
-                                    <img src="frontend/images/details-1.png" class="xzoom" id="xzoom-default"
-                                        xoriginal="frontend/images/details-1.png" />
+                                    <img src="{{ url('frontend/images/details-1.png') }}" class="xzoom" id="xzoom-default"
+                                        xoriginal="{{ url('frontend/images/details-1.png') }}" />
                                 </div>
                                 <div class="div xzoom-thubms">
-                                    <a href="frontend/images/details-1.png">
-                                        <img src="frontend/images/details-1.png" class="xzoom-gallery" width="120px"
-                                            xpreview="frontend/images/details-1.png" />
+                                    <a href="{{ url('frontend/images/details-1.png') }}">
+                                        <img src="{{ url('frontend/images/details-1.png') }}" class="xzoom-gallery"
+                                            width="120px" xpreview="{{ url('frontend/images/details-1.png') }}" />
                                     </a>
-                                    <a href="frontend/images/details-1.png">
-                                        <img src="frontend/images/details-1.png" class="xzoom-gallery" width="120px"
-                                            xpreview="frontend/images/details-1.png" />
+                                    <a href="{{ url('frontend/images/details-1.png') }}">
+                                        <img src="{{ url('frontend/images/details-1.png') }}" class="xzoom-gallery"
+                                            width="120px" xpreview="{{ url('frontend/images/details-1.png') }}" />
                                     </a>
-                                    <a href="frontend/images/details-1.png">
-                                        <img src="frontend/images/details-1.png" class="xzoom-gallery" width="120px"
-                                            xpreview="frontend/images/details-1.png" />
+                                    <a href="{{ url('frontend/images/details-1.png') }}">
+                                        <img src="{{ url('frontend/images/details-1.png') }}" class="xzoom-gallery"
+                                            width="120px" xpreview="{{ url('frontend/images/details-1.png') }}" />
                                     </a>
-                                    <a href="frontend/images/details-1.png">
-                                        <img src="frontend/images/details-1.png" class="xzoom-gallery" width="120px"
-                                            xpreview="frontend/images/details-1.png" />
+                                    <a href="{{ url('frontend/images/details-1.png') }}">
+                                        <img src="{{ url('frontend/images/details-1.png') }}" class="xzoom-gallery"
+                                            width="120px" xpreview="{{ url('frontend/images/details-1.png') }}" />
                                     </a>
-                                    <a href="frontend/images/details-1.png">
-                                        <img src="frontend/images/details-1.png" class="xzoom-gallery" width="120px"
-                                            xpreview="frontend/images/details-1.png" />
+                                    <a href="{{ url('frontend/images/details-1.png') }}">
+                                        <img src="{{ url('frontend/images/details-1.png') }}" class="xzoom-gallery"
+                                            width="120px" xpreview="{{ url('frontend/images/details-1.png') }}" />
                                     </a>
                                 </div>
                             </div>
@@ -70,21 +70,24 @@
                             </p>
                             <div class="features row">
                                 <div class="col-md-4">
-                                    <img src="frontend/images/ic_event.png" alt="Icon Featured" class="features-image" />
+                                    <img src="{{ url('frontend/images/ic_event.png') }}" alt="Icon Featured"
+                                        class="features-image" />
                                     <div class="description">
                                         <h3>Featured Event</h3>
                                         <p>Tari Kecak</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 border-left">
-                                    <img src="frontend/images/ic_bahasa.png" alt="Icon Featured" class="features-image" />
+                                    <img src="{{ url('frontend/images/ic_bahasa.png') }}" alt="Icon Featured"
+                                        class="features-image" />
                                     <div class="description">
                                         <h3>Language</h3>
                                         <p>Bahasa Indonesia</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4 border-left">
-                                    <img src="frontend/images/ic_foods.png" alt="Icon Featured" class="features-image" />
+                                    <img src="{{ url('frontend/images/ic_foods.png') }}" alt="Icon Featured"
+                                        class="features-image" />
                                     <div class="description">
                                         <h3>Foods</h3>
                                         <p>Local Food</p>
@@ -97,11 +100,16 @@
                         <div class="card card-details card-right">
                             <h2>Members are going</h2>
                             <div class="members my-2">
-                                <img src="frontend/images/member-1.png" alt="#" class="member-image mr-1" />
-                                <img src="frontend/images/member-2.png" alt="#" class="member-image mr-1" />
-                                <img src="frontend/images/member-3.png" alt="#" class="member-image mr-1" />
-                                <img src="frontend/images/member-4.png" alt="#" class="member-image mr-1" />
-                                <img src="frontend/images/member-other.png" alt="#" class="member-image mr-1" />
+                                <img src="{{ url('frontend/images/member-1.png') }}" alt="#"
+                                    class="member-image mr-1" />
+                                <img src="{{ url('frontend/images/member-2.png') }}" alt="#"
+                                    class="member-image mr-1" />
+                                <img src="{{ url('frontend/images/member-3.png') }}" alt="#"
+                                    class="member-image mr-1" />
+                                <img src="{{ url('frontend/images/member-4.png') }}" alt="#"
+                                    class="member-image mr-1" />
+                                <img src="{{ url('frontend/images/member-other.png') }}" alt="#"
+                                    class="member-image mr-1" />
                             </div>
                             <hr />
                             <h2>Trip Information</h2>
@@ -137,7 +145,7 @@
 @endsection
 
 @push('addon-script')
-    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="{{ url('frontend/libraries/xzoom/xzoom.min.js') }}"></script>
     <script>
         $(document).ready(function() {
             $(".xzoom, .xzoom-gallery").xzoom({
