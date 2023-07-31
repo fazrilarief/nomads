@@ -17,7 +17,7 @@
             <br />
             moment you never see before
         </p>
-        <a href="#" class="btn btn-get-started px-4 mt-4"> Get Started </a>
+        <a href="#Popular" class="btn btn-get-started px-4 mt-4"> Get Started </a>
     </header>
 
     <!-- Main Content -->
@@ -70,7 +70,7 @@
                             <div class="travel-country">INDONESIA</div>
                             <div class="travel-location">DERATAN, BALI</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">View Details</a>
+                                <a href="{{ url('/detail') }}" class="btn btn-travel-details px-4">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                             <div class="travel-country">INDONESIA</div>
                             <div class="travel-location">BROMO, MALANG</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">View Details</a>
+                                <a href="{{ url('/detail') }}" class="btn btn-travel-details px-4">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                             <div class="travel-country">INDONESIA</div>
                             <div class="travel-location">NUSA PENIDA</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html" class="btn btn-travel-details px-4">View Details</a>
+                                <a href="{{ url('/detail') }}" class="btn btn-travel-details px-4">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                             <div class="travel-country">MIDDLE EAST</div>
                             <div class="travel-location">DUBAI</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html"class="btn btn-travel-details px-4">View Details</a>
+                                <a href="{{ url('/detail') }}"class="btn btn-travel-details px-4">View Details</a>
                             </div>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                         </p>
                     </div>
                     <div class="col-md-8 text-center">
-                        <img src="frontend/images/logos_partner.png" alt="Logo Partner" class="img-partner" />
+                        <img src="{{ url('frontend/images/logos_partner.png') }}" alt="Logo Partner" class="img-partner" />
                     </div>
                 </div>
             </div>
@@ -150,7 +150,8 @@
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card card-testimonial text-center">
                                 <div class="testimonial-content">
-                                    <img src="frontend/images/avatar-4.png" alt="user" class="mb-4 rounded-circle" />
+                                    <img src="{{ url('frontend/images/avatar-4.png') }}" alt="user"
+                                        class="mb-4 rounded-circle" />
                                     <h3 class="mb-4">Fazril Arief Nugraha</h3>
                                     <p class="testimonial">
                                         “ It was glorious and I could not stop to say wohooo for
@@ -164,7 +165,8 @@
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card card-testimonial text-center">
                                 <div class="testimonial-content">
-                                    <img src="frontend/images/avatar-2.png" alt="user" class="mb-4 rounded-circle" />
+                                    <img src="{{ url('frontend/images/avatar-2.png') }}" alt="user"
+                                        class="mb-4 rounded-circle" />
                                     <h3 class="mb-4">Shayna</h3>
                                     <p class="testimonial">
                                         “ The trip was amazing and I saw something beautiful in
@@ -178,7 +180,8 @@
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <div class="card card-testimonial text-center">
                                 <div class="testimonial-content">
-                                    <img src="frontend/images/avatar-3.png" alt="user" class="mb-4 rounded-circle" />
+                                    <img src="{{ url('frontend/images/avatar-3.png') }}" alt="user"
+                                        class="mb-4 rounded-circle" />
                                     <h3 class="mb-4">Shabrina</h3>
                                     <p class="testimonial">
                                         “ I loved it when the waves was shaking harder — I was
@@ -195,7 +198,7 @@
                             <a href="#" class="btn btn-need-help px-4 mt-4 mx-1">
                                 I Need Help
                             </a>
-                            <a href="#" class="btn btn-get-started px-4 mt-4 mx-1">
+                            <a href="#Popular" class="btn btn-get-started px-4 mt-4 mx-1">
                                 Get Started
                             </a>
                         </div>

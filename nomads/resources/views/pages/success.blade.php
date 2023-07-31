@@ -10,7 +10,7 @@
                 <p>
                     We’ve sent you email for trip instruction please read it as well
                 </p>
-                <a href="index.html" class="btn btn-home-page mt-3 px-5">
+                <a href="{{ url('/') }}" class="btn btn-home-page mt-3 px-5">
                     Home Page
                 </a>
             </div>

@@ -3,7 +3,7 @@
 @section('title', 'Detail Travel')
 
 @push('prepend-style')
-    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css" />
+    <link rel="stylesheet" href="{{ url('frontend/libraries/xzoom/xzoom.css') }}" />
 @endpush
 
 @section('content')
@@ -133,7 +133,7 @@
                             </table>
                         </div>
                         <div class="join-container">
-                            <a href="checkout.html" class="btn btn-block btn-join-now mt-3 py-2">
+                            <a href="{{ url('/checkout') }}" class="btn btn-block btn-join-now mt-3 py-2">
                                 Join Now
                             </a>
                         </div>
