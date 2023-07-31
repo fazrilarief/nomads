@@ -100,7 +100,7 @@
                             <div class="travel-country">MIDDLE EAST</div>
                             <div class="travel-location">DUBAI</div>
                             <div class="travel-button mt-auto">
-                                <a href="details.html"btn btn-travel-details px-4">View Details</a>
+                                <a href="details.html"btn btn-travel-details px-4>View Details</a>
                             </div>
                         </div>
                     </div>
