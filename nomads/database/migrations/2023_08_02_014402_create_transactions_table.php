@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('galleries', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('travel_packages_id');
-            $table->text('image');
-            $table->softDeletes();
+        Schema::create('transactions', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('galleries');
+        Schema::dropIfExists('transactions');
     }
 };
