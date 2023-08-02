@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transactions', function (Blueprint $table) {
+        Schema::create('transaction_details', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('travel_packages_id');
-            $table->integer('users_id');
-            $table->integer('additional_visa');
-            $table->integer('trasaction_total');
-            $table->string('transaction_status'); //IN_CART, PENDING, SUCCESS, CANCEL, FAILED
+            $table->integer('transactions_id');
+            $table->string('username');
+            $table->string('nationality');
+            $table->boolean('is_visa');
+            $table->date('doe_passport');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transactions');
+        Schema::dropIfExists('transaction_details');
     }
 };
