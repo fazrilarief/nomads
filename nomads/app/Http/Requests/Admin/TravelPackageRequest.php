@@ -29,8 +29,8 @@ class TravelPackageRequest extends FormRequest
             'language' => 'required | max:225',
             'foods' => 'required | max:225',
             'departure_date' => 'required | date',
-            'duration' => 'required | date',
-            'type' => 'required | date',
+            'duration' => 'required | string',
+            'type' => 'required | string',
             'price' => 'required | integer',
         ];
     }

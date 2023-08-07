@@ -18,6 +18,7 @@
                     <table class="table table-bordered text-center" width="100%" cellspasing="0">
                         <thead>
                             <tr>
+                                <th>No</th>
                                 <th>ID</th>
                                 <th>Title</th>
                                 <th>Location</th>
@@ -30,6 +31,7 @@
                         <tbody>
                             @forelse ($items as $item)
                                 <tr>
+                                    <th>{{ $loop->iteration }}</th>
                                     <th>{{ $item->id }}</th>
                                     <th>{{ $item->title }}</th>
                                     <th>{{ $item->location }}</th>
