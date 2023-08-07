@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\Admin\TravelPackageController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\HomeController;
+use App\Models\TravelPackage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,11 +30,12 @@ Route::get('/checkout/success', [CheckoutController::class, 'success'])
 
 // Route::get('admin', [DashboardController::class, 'index'])->name('admin');
 Route::prefix('admin')
-    ->namespace('Admin')
+    // ->namespace('Admin')
     ->middleware('auth', 'admin')
     ->group(function () {
         Route::get('/', [DashboardController::class, 'index'])
             ->name('dashboard');
+        Route::resource('travel-package', TravelPackageController::class);
     });
 
 Auth::routes(['verify' => true]);
