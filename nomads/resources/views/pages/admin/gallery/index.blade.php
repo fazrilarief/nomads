@@ -12,45 +12,49 @@
             </a>
         </div>
 
+        <!-- Content Row -->
         <div class="row">
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered text-center" width="100%" cellspasing="0">
+                    <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
                                 <th>No</th>
+                                <th>ID</th>
                                 <th>Travel</th>
                                 <th>Gambar</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse ($items as $item)
+                            @forelse($items as $item)
                                 <tr>
                                     <th>{{ $loop->iteration }}</th>
-                                    <th>{{ $item->travel_package->title }}</th>
-                                    <th>
-                                        <img src="{{ storage::ur($item->image) }}" alt="#" width="150px"
+                                    <td>{{ $item->id }}</td>
+                                    <td>{{ $item->travel_package->title }}</td>
+                                    <td>
+                                        <img src="{{ Storage::url($item->image) }}" alt="" style="width: 200px"
                                             class="img-thumbnail">
-                                    </th>
-                                    <th>
+                                    </td>
+                                    <td>
                                         <a href="{{ route('gallery.edit', $item->id) }}" class="btn btn-info">
                                             <i class="fa fa-pencil-alt"></i>
                                         </a>
-                                        <form action="{{ route('gallery.destroy', $item->id) }}" method="POST"
+                                        <form action="{{ route('gallery.destroy', $item->id) }}" method="post"
                                             class="d-inline">
                                             @csrf
                                             @method('delete')
                                             <button class="btn btn-danger">
-                                                <i class="fa fa-trash-alt"></i>
+                                                <i class="fa fa-trash"></i>
                                             </button>
                                         </form>
-                                    </th>
+
+                                    </td>
                                 </tr>
                             @empty
-                                <tr>
-                                    <td colspan="7" class="text-center">Data Kosong</td>
-                                </tr>
+                                <td colspan="7" class="text-center">
+                                    Data Kosong
+                                </td>
                             @endforelse
                         </tbody>
                     </table>
